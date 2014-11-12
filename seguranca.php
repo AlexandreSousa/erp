@@ -22,8 +22,8 @@ $_SG['validaSempre'] = true;       // Deseja validar o usuário e a senha a cada
 // Evita que, ao mudar os dados do usuário no banco de dado o mesmo contiue logado.
 
 $_SG['servidor'] =getenv('IP');    // Servidor MySQL
-$_SG['usuario'] = 'alexandresousa';          // Usuário MySQL
-$_SG['senha'] = '';                // Senha MySQL
+$_SG['usuario'] = 'root';          // Usuário MySQL
+$_SG['senha'] = '455ttte';                // Senha MySQL
 $_SG['banco'] = 'sgga2';            // Banco de dados MySQL
 
 $_SG['paginaLogin'] = 'login.php'; // Página de login

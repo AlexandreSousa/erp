@@ -2,7 +2,7 @@
 include("seguranca.php"); // Inclui o arquivo com o sistema de segurança
 protegePagina(); // Chama a função que protege a página
 
-require_once('include/config.php');
+    require_once('include/config.php');
 
     ini_set('display_errors',1);
     ini_set('display_startup_erros',1);

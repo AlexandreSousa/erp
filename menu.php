@@ -9,7 +9,7 @@
   </button>
   <ul class="dropdown-menu" role="menu">
       
-    <li><a href="?pg=login/list_login"><i class="fa fa-user"></i>&nbsp;Cliente</a></li>  
+    <li><a href="?pg=clientes/list_cliente"><i class="fa fa-user"></i>&nbsp;Cliente</a></li>
 
     <li><a href="?pg=produto/list_produto"><i class="fa fa-cubes"></i>&nbsp;Planos</a></li>
     
