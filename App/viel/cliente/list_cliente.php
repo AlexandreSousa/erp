@@ -6,8 +6,6 @@
  * Time: 16:34
  */
 
-
-
 $topo = new Tgrid();
 $topo->Ttopo('Listagen de usuario','cliente','cliente');
 
@@ -26,7 +24,7 @@ $inicio =  ($pag * $maximo) - $maximo;
 
 $topo->setPrimaryKey('id');
 
-$topo->TtotalDb('empresa',$maximo);
+$topo->TtotalDb('cliente',$maximo);
 $topo->setPagin($inicio,$maximo);
 $topo->setHerd('ID,Nome,Endereço,Fone,Email');
 

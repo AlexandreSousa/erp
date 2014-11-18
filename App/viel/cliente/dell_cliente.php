@@ -8,4 +8,4 @@
 
 $id = $_GET['id'];
 $db->setKey('id');
-$db->delet('menu',$id,'cliente','cliente');
+$db->delet('cliente',$id,'cliente','cliente');

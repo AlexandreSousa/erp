@@ -52,9 +52,15 @@ class db {
        $val = $select->fetch_array();
        return $val;
     }
-
+    
+    
+    /**
+     * @param string $_db       tabela do banco de dados
+     * @param string $campos    Campos de registros vindo do formulario
+     * @param string $where     Valor do campo necessario para a atualização do registro
+     * 
+     */
     public function update($_db,$campos,$where){
-
         $keys = array_keys($campos);
         $array   = array_values($campos);
         $array2  = array_values($keys);
@@ -64,8 +70,8 @@ class db {
         }
         $size = strlen($variavel);
         $sis = substr($variavel,0, $size-1);
-        $mysqli->query("UPDATE  `$_db` SET  $sis  WHERE `{$this->Key}` = '$where'");
-
+        $sql =("UPDATE  `$_db` SET  $sis  WHERE `{$this->Key}` = '$where'");
+        $this->db->query($sql);
     }
 
     public function delet($_db,$id,$modulo,$arquivo){

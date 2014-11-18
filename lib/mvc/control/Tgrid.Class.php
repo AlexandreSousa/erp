@@ -155,7 +155,7 @@ class Tgrid extends db{
 
         //echo "Temos um total de {$total->num_rows} registro exibindo {$res->num_rows} de  {$total}";
 
-        $cal = $max -$this->num_rows;
+        $cal = $max - $this->num_rows;
         echo "Temos um total de {$total->num_rows} registros exibindo {$max} de {$cal}";
 
         }

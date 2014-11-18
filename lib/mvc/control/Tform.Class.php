@@ -41,7 +41,14 @@ class Tform {
             echo '<input type="hidden" id="post" name="post" value="ok">';
     }
 
-
+    /**
+     * 
+     * @param string $name      Nome do campo
+     * @param string $id        ID do campo
+     * @param string $campos    Array com is canpos do auto complet
+     * @param string $size      Tamanho do campo
+     * 
+     */
     public function TAutoComplet($name,$id,$campos,$size){
         $z = explode(',',$campos);
         echo '<label>'.$this->Label.'<br>';
@@ -68,6 +75,19 @@ class Tform {
     public function Tformf(){
 
         echo '</form>';
+    }
+
+    /**
+     * @param string $type  Tipo de campo
+     * @param string $name  Nome do campo
+     * @param string $id    Nome de id do campo
+     * @param string $value Valor do campo
+     * 
+     */
+    public function TprimaryInput($type,$name,$id,$value){
+        
+        echo '<input type="'.$type.'" name="'.$name.'" id="'.$id.'" value="'.$value.'" />';
+        
     }
 
     /**

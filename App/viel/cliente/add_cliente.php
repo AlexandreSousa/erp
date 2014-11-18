@@ -32,8 +32,6 @@ $x->Tinput('text','fone','fone','','...','',20);
 echo '<br>';
 $x->setLabel('Email');
 $x->Tinput('text','email','email','','...','',20);
-
 $x->Trecord();
-
 echo '<br>';
 $x->Tbuton('submint','Gravar');
