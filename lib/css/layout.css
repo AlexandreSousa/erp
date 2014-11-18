@@ -1,0 +1,439 @@
+@charset "utf-8";
+
+html, body {
+	width:100%;
+	height:100%;
+}
+.limite {
+	padding:0 15px;
+}
+.campo-busca {
+	background-color: #FFFFFF !important;
+	height: 23px !important;
+	width: 214px !important;
+	border: 1px solid #E6E6E6 !important;
+	padding: 5px 10px !important;
+	line-height:23px !important;
+	-webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    border-radius: 0px !important;
+	color:#999999 !important;
+}
+.table-faturamento td {
+	height:29px;
+}
+.link-rodape {
+	color:#FFFFFF;
+}
+a:hover.link-rodape{
+	text-decoration:underline;
+	color:#FFFFFF;
+}
+#resultadoBusca {
+	background-color:#FFF;
+	margin:50px auto 0 auto !important;
+	border: solid 8px #FF6;
+	z-index:200;
+	text-align:left;
+	float:none !important;
+	position:relative;
+}
+#resultadoBusca .icone {
+	display:none;
+}
+#resultadoBusca h1 {
+	font-size: 17.5px;
+	color:#297ACC;
+}
+#resultadoBusca a {
+	color:#000000;
+}
+#resultadoBusca h2 {
+	font-size: 14.5px;
+	color:#297ACC;
+}
+
+#resultadoBusca .fechar {
+	position:absolute;
+	width: 70px;
+	height:19px;
+	top:5px;
+	right:5px;
+	background-image:url(../../../imagens/btFechar.png);
+	text-indent: -100px;
+	overflow: hidden;
+}
+#resultadoBusca #resp {
+	padding:5px;
+	line-height:20px;
+}
+#resultadoBusca #resp #limite {
+	overflow:auto;
+	height:450px;
+}
+#overlay {
+	background:#FFFFFF;
+	position:absolute;
+	z-index:180;
+	top:0px;
+	left:0px;
+	width:100%;
+}
+#resultadoBusca .loading {
+	height:32px;
+	background-image:url(../../../imagens/loading.gif);
+	background-repeat: no-repeat;
+	background-position: center center;
+	text-align: center;
+	padding-top: 250px;
+}
+.tit-drag {
+	margin: 0px;
+	padding-top: 8px;
+	padding-right: 10px;
+	padding-bottom: 8px;
+	padding-left: 10px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #333333;
+	text-transform: uppercase;
+	position:relative;
+}
+.tit-drag span.minimiza {
+	position:absolute;
+	z-index:5;
+	width:18px;
+	height:18px;
+	right:10px;
+	top:9px;
+}
+.tit-drag .icon-drag {
+	width:5px; height:15px; display:inline-block; margin-right:8px; background-color:#1668B5;
+}
+.item-drag .content {
+	padding: 0 10px 8px 10px;
+}
+a {
+	color: #297ACC;
+	/*color:#333333;*/
+	text-decoration: none;
+}
+a:hover {
+	color: #297ACC;
+	text-decoration: underline;
+}
+.dragAjuda {
+	clear:both;
+	border: 1px dashed #D7D7D7;
+	width: 100%;
+	min-height:50px;
+	margin: 8px auto;
+	background-color:f9f9f9;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.text-normal {
+	font-weight:normal;
+}
+#conteudo {
+	position:relative;
+	width:100%;
+	height:auto;
+	min-height:100%;
+}
+.margin-auto {
+	margin: 0 auto !important;
+	float:none !important;
+}
+.userDados {
+	color:#FFFFFF; line-height:30px;
+}
+.icoUser {
+	background-image: url(../imagens/user_ico.jpg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	height: 30px;
+	width: 15px;
+	display:inline-block;
+}
+.item-drag {
+	border:solid 5px #F0F0F0;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.userAcesso {
+	line-height:30px;
+	color:#FFFFFF;
+}
+#topo {
+	height: 110px;
+	width: 100%;
+	background-color: #297ACC;
+}
+
+#barraTop {
+	background:#333333;
+	min-height:30px;
+	height:auto;
+	width:100%;
+}
+#rodape {
+	position: absolute;
+	z-index: 5;
+	left: 0px;
+	bottom: 0px;
+	width:100%;
+}
+#rodape .linha{
+	background-color:#297ACC;
+	border-bottom: solid 1px #3988D7;
+	height: 60px;
+}
+#rodape .direitos{
+	background-color:#1668B5;
+	height: 53px;
+	overflow:hidden;
+}
+.relative {
+	position:relative;
+}
+.alert-icon-superior {
+	position:absolute !important;
+	z-index:2 !important;
+	right:-5px !important;
+	top:-5px !important;
+}
+.logoTopo {
+	height: 75px;
+	background-image: url(../imagens/logo.jpg);
+	background-repeat: no-repeat;
+	background-position: 25px center;
+}
+.logoTopo2 {
+	height: 75px;
+	background-image: url(../imagens/logo.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+#menu {
+	background-color: #1668B5;
+	height: 35px;
+}
+
+/*MENU A PARTIR DAQUI*/
+#menu #principal {
+	height: 35px;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	float:left;
+}
+#menu li {
+	display: block;
+	list-style-type: none;
+	padding-top: 0;
+	padding-bottom: 0;
+	float: left;
+	position: relative;
+}
+#menu li a {
+	color: #FFF;
+	text-decoration: none;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 8px;
+	padding-bottom: 7px;
+	float: left;
+	font-weight: bold;
+	display: block;
+	text-transform: uppercase;
+}
+#menu li a.ativo {
+	color:#FFFFFF;
+}
+#menu li a:hover, #menu li:hover a {
+	background-color:#FFFFFF;
+	color:#508DB8;
+}
+
+#menu #principal li ul {
+	position: absolute;
+	top: 35px;
+	left: 0px;
+	height: auto;
+	width: 190px;
+	margin: 0px;
+	padding: 0px;
+	display:none;
+	z-index:500;
+	border-top:none;
+	border-bottom:solid 2px #999999;
+	border-right:solid 1px #CCCCCC;
+	border-left:solid 1px #CCCCCC;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	
+}
+#menu #principal li ul li {
+	background-color: #FFFFFF;
+	width: 190px;
+	padding: 0px;
+	border-bottom: dotted 1px #d6d6d6;
+}
+#menu #principal li ul li a {
+	font-family:Calibri, Verdana, Geneva, sans-serif;
+	font-size:12px;
+	color:#333;
+	font-weight:normal;
+	width: 165px;
+	padding-top: 5px;
+	padding-right: 15px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	text-transform:none;
+}
+#menu #principal li ul li a:hover {
+	background:#297ACC;
+	color:#FFFFFF;
+}
+#menu #principal li:hover ul {
+	display:block;
+}
+#menu #principal li ul li .sub {
+	position: absolute;
+	top: 0px;
+	left: 190px;
+	height: auto;
+	width: 190px;
+	margin: 0px;
+	padding: 0px;
+	display:none;
+	z-index:5;
+	border:solid 1px #CCCCCC;
+}
+#menu #principal li:hover ul li:hover .sub {
+	display:block;
+}
+/*FIM MENU*/
+
+.faturaPago {
+	font-size:20px;
+	color:#0C0;
+	font-weight:bold;
+	margin:5px 0;
+}
+.faturaNaoPago {
+	font-size:20px;
+	color:#F00;
+	font-weight:bold;
+	margin:5px 0;
+}
+.faturaCancelado {
+	font-size:20px;
+	color:#CCC;
+	font-weight:bold;
+	margin:5px 0;
+}
+.faturaPago2 {
+	color:#0C0;
+	font-weight:bold;
+	margin:5px 0;
+}
+.faturaNaoPago2 {
+	color:#F00;
+	font-weight:bold;
+	margin:5px 0;
+}
+.faturaCancelado2 {
+	color:#CCC;
+	font-weight:bold;
+	margin:5px 0;
+}
+fieldset { border-top:2px solid #E0DFE3; margin-bottom:50px; padding:0px; } 
+legend { font-size:25px; color:#666; margin-left:10px; padding:0 5px; font-weight:bold; width:auto !important; border-bottom:none }
+
+.respticket {
+	background-image: url(../imagens/bg_resp.gif);
+	width:100%;
+	height:65px;
+	background-position: 0px bottom;
+	background-repeat:repeat-x;
+	position:relative;
+}
+.respticket .arred{
+	background-image: url(../imagens/resp_arred.gif);
+	width:15px;
+	height:17px;
+	position:absolute;
+	right:0px;
+	bottom:0px;
+	z-index:10;
+	margin:0px;
+}
+
+.respticket .user {
+	font-size: 21px;
+	color: #069;
+}
+.respticket .user a {
+	font-size: 21px;
+	color: #069;
+}
+
+.respticket .bg {
+	background-image: url(../imagens/resp_ticket.gif);
+	background-repeat: no-repeat;
+	background-position: 0px bottom;
+	margin: auto;
+	padding: 0px;
+	height: 65px;
+	width: 100%px;
+	position: relative;
+}
+
+.respticket .dataresp {
+	color:#666666;
+	text-align:right;
+}
+
+.respostaticket {
+
+	padding: 5px 5px 15px 5px;
+	height: auto;
+	margin: 0px 0px 10px 0px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #C0C0C0;
+	border-bottom-color: #C0C0C0;
+	border-left-color: #C0C0C0;	
+	background:#FBFBFB;
+}
+.selectTk{
+	font-size:18px;
+}
+.ticketAberto {
+	color:#6C3;
+}
+.ticketRespondido {
+	color:#06F;
+}
+.ticketRespondidoC {
+	color:#F90;
+}
+.ticketProcesso {
+	color:#F00;
+}
+.ticketFechado {
+	color:#CCC;
+}
