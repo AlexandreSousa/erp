@@ -14,7 +14,6 @@
     require_once ('lib/plugin/load_css.php');
     require_once ('lib/plugin/load_js.php');
     require_once ('lib/plugin/load_bootstrap.php');
-
     ?>
 </head>
 <body>

@@ -16,8 +16,6 @@ if($post == 'ok'){
 
 }
 
-
-
 $topo = new Tgrid;
 $topo->Ttopo('Cadastro de Level','cliente','cliente');
 
@@ -36,7 +34,6 @@ $x->setLabel('Email');
 $x->Tinput('text','email','email','','...','',20);
 
 $x->Trecord();
-
 
 echo '<br>';
 $x->Tbuton('submint','Gravar');

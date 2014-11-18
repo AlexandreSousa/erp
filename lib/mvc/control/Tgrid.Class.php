@@ -79,8 +79,6 @@ class Tgrid extends db{
 
 
         $res = $this->db->query("SELECT * FROM {$db} $this->Pagin");
-        $res->fetch_array();
-
         while($ok = $res->fetch_array()){
             ?>
             <tr>
