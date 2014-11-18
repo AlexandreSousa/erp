@@ -38,7 +38,7 @@ class Tform {
      */
     public function Trecord(){
 
-            echo '<input type="text" id="post" name="post" value="ok">';
+            echo '<input type="hidden" id="post" name="post" value="ok">';
     }
 
     /**

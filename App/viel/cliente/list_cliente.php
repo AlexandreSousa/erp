@@ -28,16 +28,10 @@ $topo->setPrimaryKey('id');
 
 $topo->TtotalDb('empresa',$maximo);
 $topo->setPagin($inicio,$maximo);
-$topo->setHerd('ID,Level,Nome,Icone,Status');
+$topo->setHerd('ID,Nome,Endereço,Fone,Email');
 
 
-$topo->setCamposSecond('id_level,icon');
-$topo->setDbSecond('level,icones');
-$topo->setWhere('id,icone,id');
-
-$topo->setValor('level,id');
-
-$topo->Ttable('menu','id,id_level,nome,icon,status','cliente','cliente');
+$topo->Ttable('cliente','id,nome,endereco,fone,email','cliente','cliente');
 ?>
 <?php
 echo '<br>';

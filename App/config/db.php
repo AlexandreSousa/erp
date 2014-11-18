@@ -3,7 +3,7 @@
  * Conexão com banco de dados
  */
 
-    $host = '127.0.0.1';
-    $user = 'root';
-    $pass = '455ttte';
-    $data = 'sgga2';
+    $host = getenv('IP');
+    $user = 'alexandresousa';
+    $pass = '';
+    $data = 'loja';

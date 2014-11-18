@@ -12,7 +12,7 @@ if($post == 'ok'){
 
     $grava = new db;
     $campos = $_POST['campo'];
-    $grava->creat('menu',$campos);
+    $grava->creat('cliente',$campos);
 
 }
 
@@ -23,21 +23,18 @@ $topo->Ttopo('Cadastro de Level','cliente','cliente');
 
 $x = new Tform;
 $x->Tformi('form1');
-$x->setLabel('Ramo');
-$x->Tinput('text','id_ramo','id_ramo','','Ramo','',20);
+$x->setLabel('Nome');
+$x->Tinput('text','nome','nome','','Nome do Cliente','',20);
 echo '&nbsp';
-$x->setLabel('id_level');
-$x->Tinput('text','id_level','id_level','','...','',20);
+$x->setLabel('Endereço');
+$x->Tinput('text','endereco','endereco','','...','',20);
 echo '&nbsp';
-$x->setLabel('icon');
-$x->Tinput('text','icon','icon','','...','',20);
+$x->setLabel('Fone');
+$x->Tinput('text','fone','fone','','...','',20);
 echo '<br>';
-$x->setLabel('nome');
-$x->Tinput('text','nome','nome','','...','',20);
+$x->setLabel('Email');
+$x->Tinput('text','email','email','','...','',20);
 
-echo '&nbsp';
-$x->setLabel('status');
-$x->Tinput('text','status','status','','...','',20);
 $x->Trecord();
 
 

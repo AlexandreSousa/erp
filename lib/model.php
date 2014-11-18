@@ -15,7 +15,7 @@ class db {
 
     public function __construct()
     {
-        require('/var/www/damasco/App/config/db.php');
+        require('App/config/db.php');
         $this->db = new mysqli($host,$user,$pass,$data);
     }
 
